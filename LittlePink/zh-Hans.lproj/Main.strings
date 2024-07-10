@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "关注的人的笔记页面"; ObjectID = "7xu-3A-dtF"; */
+"7xu-3A-dtF.text" = "关注的人的笔记页面";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "BKW-XY-jzB"; */
+"BKW-XY-jzB.title" = "商城";
+
+/* Class = "UITabBarItem"; title = "Message"; ObjectID = "Mvb-3r-ptF"; */
+"Mvb-3r-ptF.title" = "消息";
+
+/* Class = "UILabel"; text = "(占位)"; ObjectID = "UGP-Ra-IbS"; */
+"UGP-Ra-IbS.text" = "(占位)";
+
+/* Class = "UITabBarItem"; title = "House"; ObjectID = "aFV-KF-EGs"; */
+"aFV-KF-EGs.title" = "首页";
+
+/* Class = "UITabBarItem"; title = "Me"; ObjectID = "hWX-HW-l9P"; */
+"hWX-HW-l9P.title" = "我";
+
+/* Class = "UITabBarItem"; title = "Plus"; ObjectID = "qok-QY-Wev"; */
+"qok-QY-Wev.title" = "发布";

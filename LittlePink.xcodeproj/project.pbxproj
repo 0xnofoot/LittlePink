@@ -7,9 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1F4F2EE7915F47E724CA4BB /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */; };
+		DA6996562C3CE834006DDB2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA6996552C3CE834006DDB2B /* README.md */; };
+		DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6996622C3D11A5006DDB2B /* Localizable.strings */; };
+		DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA69966C2C3D15A6006DDB2B /* InfoPlist.strings */; };
+		DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */; };
+		DA6CAA1D2C3D210900ADB1DC /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1C2C3D210900ADB1DC /* PostVC.swift */; };
+		DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */; };
+		DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6A2C3C0C39002F6904 /* HomeVC.swift */; };
+		DA769A6D2C3C0FA1002F6904 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6C2C3C0FA1002F6904 /* FollowVC.swift */; };
+		DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6E2C3C0FB8002F6904 /* DiscoveryVC.swift */; };
+		DA769A712C3C0FCC002F6904 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A702C3C0FCC002F6904 /* NearByVC.swift */; };
+		DA769A732C3C115C002F6904 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A722C3C115C002F6904 /* Constants.swift */; };
+		DA769A792C3CCF0E002F6904 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A782C3CCF0E002F6904 /* WaterfallVC.swift */; };
+		DA769A7B2C3CD951002F6904 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A7A2C3CD951002F6904 /* WaterfallCell.swift */; };
+		DA8228402C3E26E200010942 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82283F2C3E26E200010942 /* NoteEditVC.swift */; };
+		DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228412C3E2E2A00010942 /* PhotoCell.swift */; };
+		DA8228452C3E3B5A00010942 /* TestCodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228442C3E3B5A00010942 /* TestCodingView.swift */; };
+		DA8228482C3E5F8B00010942 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228472C3E5F8B00010942 /* PhotoFooter.swift */; };
+		DA82284C2C3E759100010942 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA82284B2C3E759100010942 /* testVideo.mp4 */; };
+		DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */; };
 		DAFC3B162C3BD327003DAB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */; };
 		DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */; };
-		DAFC3B1A2C3BD327003DAB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B192C3BD327003DAB52 /* ViewController.swift */; };
 		DAFC3B1D2C3BD327003DAB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */; };
 		DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B1E2C3BD327003DAB52 /* LittlePink.xcdatamodeld */; };
 		DAFC3B222C3BD328003DAB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFC3B212C3BD328003DAB52 /* Assets.xcassets */; };
@@ -17,15 +36,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		DA6996552C3CE834006DDB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA6996582C3CEA15006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DA69965C2C3D0CDB006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DA6996632C3D11A5006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA6996692C3D1574006DDB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA69966B2C3D15A6006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		DA6CAA1C2C3D210900ADB1DC /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DA769A6A2C3C0C39002F6904 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DA769A6C2C3C0FA1002F6904 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		DA769A6E2C3C0FB8002F6904 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		DA769A702C3C0FCC002F6904 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		DA769A722C3C115C002F6904 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA769A782C3CCF0E002F6904 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		DA769A7A2C3CD951002F6904 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		DA82283F2C3E26E200010942 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		DA8228412C3E2E2A00010942 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		DA8228442C3E3B5A00010942 /* TestCodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodingView.swift; sourceTree = "<group>"; };
+		DA8228472C3E5F8B00010942 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
+		DA82284A2C3E6A2600010942 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA82284B2C3E759100010942 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		DAFC3B122C3BD327003DAB52 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAFC3B192C3BD327003DAB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAFC3B1C2C3BD327003DAB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAFC3B1F2C3BD327003DAB52 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		DAFC3B212C3BD328003DAB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFC3B242C3BD328003DAB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFC3B262C3BD328003DAB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +77,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F4F2EE7915F47E724CA4BB /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E739D9AC2F673ABD85AD346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA6996532C3CE7A6006DDB2B /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				DA769A7A2C3CD951002F6904 /* WaterfallCell.swift */,
+				DA769A782C3CCF0E002F6904 /* WaterfallVC.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		DA6996542C3CE7CF006DDB2B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */,
+				DA769A722C3C115C002F6904 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA6CAA192C3D1A9400ADB1DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA6996622C3D11A5006DDB2B /* Localizable.strings */,
+				DA69966C2C3D15A6006DDB2B /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA6CAA202C3D392200ADB1DC /* Demo+PH */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CAA1C2C3D210900ADB1DC /* PostVC.swift */,
+				DA8228442C3E3B5A00010942 /* TestCodingView.swift */,
+			);
+			path = "Demo+PH";
+			sourceTree = "<group>";
+		};
+		DA769A752C3C131F002F6904 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA769A6A2C3C0C39002F6904 /* HomeVC.swift */,
+				DA769A6E2C3C0FB8002F6904 /* DiscoveryVC.swift */,
+				DA769A6C2C3C0FA1002F6904 /* FollowVC.swift */,
+				DA769A702C3C0FCC002F6904 /* NearByVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA8228492C3E641300010942 /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				DA82283F2C3E26E200010942 /* NoteEditVC.swift */,
+				DA8228412C3E2E2A00010942 /* PhotoCell.swift */,
+				DA8228472C3E5F8B00010942 /* PhotoFooter.swift */,
+				DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */,
+			);
+			path = NoteEdit;
+			sourceTree = "<group>";
+		};
 		DAFC3B092C3BD327003DAB52 = {
 			isa = PBXGroup;
 			children = (
+				DA6996552C3CE834006DDB2B /* README.md */,
 				DAFC3B142C3BD327003DAB52 /* LittlePink */,
 				DAFC3B132C3BD327003DAB52 /* Products */,
+				E5EDA70E77C4ECE1D11D4740 /* Pods */,
+				1E739D9AC2F673ABD85AD346 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +174,31 @@
 			children = (
 				DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */,
 				DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */,
-				DAFC3B192C3BD327003DAB52 /* ViewController.swift */,
-				DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */,
-				DAFC3B212C3BD328003DAB52 /* Assets.xcassets */,
 				DAFC3B232C3BD328003DAB52 /* LaunchScreen.storyboard */,
+				DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */,
+				DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */,
+				DA769A752C3C131F002F6904 /* Home */,
+				DA6996532C3CE7A6006DDB2B /* Waterfall */,
+				DA8228492C3E641300010942 /* NoteEdit */,
+				DA6996542C3CE7CF006DDB2B /* Common */,
+				DA6CAA202C3D392200ADB1DC /* Demo+PH */,
+				DA6CAA192C3D1A9400ADB1DC /* Resources */,
+				DAFC3B212C3BD328003DAB52 /* Assets.xcassets */,
 				DAFC3B262C3BD328003DAB52 /* Info.plist */,
 				DAFC3B1E2C3BD327003DAB52 /* LittlePink.xcdatamodeld */,
+				DA82284A2C3E6A2600010942 /* LittlePink-Bridging-Header.h */,
+				DA82284B2C3E759100010942 /* testVideo.mp4 */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		E5EDA70E77C4ECE1D11D4740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */,
+				CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFC3B292C3BD328003DAB52 /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
+				9E971649E651661ABB74DC63 /* [CP] Check Pods Manifest.lock */,
 				DAFC3B0E2C3BD327003DAB52 /* Sources */,
 				DAFC3B0F2C3BD327003DAB52 /* Frameworks */,
 				DAFC3B102C3BD327003DAB52 /* Resources */,
+				883BADBFEEDB60E21D148304 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DAFC3B092C3BD327003DAB52;
 			productRefGroup = DAFC3B132C3BD327003DAB52 /* Products */;
@@ -128,33 +262,111 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */,
+				DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */,
 				DAFC3B252C3BD328003DAB52 /* LaunchScreen.storyboard in Resources */,
+				DA82284C2C3E759100010942 /* testVideo.mp4 in Resources */,
 				DAFC3B222C3BD328003DAB52 /* Assets.xcassets in Resources */,
+				DA6996562C3CE834006DDB2B /* README.md in Resources */,
 				DAFC3B1D2C3BD327003DAB52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		883BADBFEEDB60E21D148304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E971649E651661ABB74DC63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAFC3B0E2C3BD327003DAB52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFC3B1A2C3BD327003DAB52 /* ViewController.swift in Sources */,
+				DA8228482C3E5F8B00010942 /* PhotoFooter.swift in Sources */,
 				DAFC3B162C3BD327003DAB52 /* AppDelegate.swift in Sources */,
+				DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */,
+				DA769A792C3CCF0E002F6904 /* WaterfallVC.swift in Sources */,
+				DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */,
+				DA769A7B2C3CD951002F6904 /* WaterfallCell.swift in Sources */,
+				DA8228402C3E26E200010942 /* NoteEditVC.swift in Sources */,
+				DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */,
+				DA769A6D2C3C0FA1002F6904 /* FollowVC.swift in Sources */,
+				DA6CAA1D2C3D210900ADB1DC /* PostVC.swift in Sources */,
 				DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */,
 				DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */,
+				DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */,
+				DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */,
+				DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */,
+				DA769A712C3C0FCC002F6904 /* NearByVC.swift in Sources */,
+				DA8228452C3E3B5A00010942 /* TestCodingView.swift in Sources */,
+				DA769A732C3C115C002F6904 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DA6996622C3D11A5006DDB2B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6996632C3D11A5006DDB2B /* zh-Hans */,
+				DA6996692C3D1574006DDB2B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA69966C2C3D15A6006DDB2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA69966B2C3D15A6006DDB2B /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAFC3B1C2C3BD327003DAB52 /* Base */,
+				DA69965C2C3D0CDB006DDB2B /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +375,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DAFC3B242C3BD328003DAB52 /* Base */,
+				DA6996582C3CEA15006DDB2B /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,6 +388,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -238,6 +452,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -291,19 +506,23 @@
 		};
 		DAFC3B2A2C3BD328003DAB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6ZWSFSA743;
-				GENERATE_INFOPLIST_FILE = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,27 +530,36 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nofoot.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DAFC3B2B2C3BD328003DAB52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6ZWSFSA743;
-				GENERATE_INFOPLIST_FILE = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,9 +567,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nofoot.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
