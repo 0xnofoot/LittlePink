@@ -13,3 +13,7 @@ protocol ChannelVCDelegate {
     /// - Parameter subChannel: 传回来的subChannel
     func updateChannel(channel: String, subChannel: String)
 }
+
+protocol POIVCDelegate {
+    func updatePOIName(_ poiName: String)
+}

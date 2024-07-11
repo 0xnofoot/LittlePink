@@ -12,3 +12,12 @@
 #endif /* LittlePink_Bridging_Header_h */
 
 #import "MBProgressHUD.h"
+
+#import "MJRefresh.h"
+
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+#import <AMapLocationKit/AMapLocationKit.h>
+
+#import <AMapSearchKit/AMapSearchKit.h>
+

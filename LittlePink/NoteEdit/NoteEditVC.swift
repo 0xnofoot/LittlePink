@@ -16,17 +16,22 @@ class NoteEditVC: UIViewController {
 
     var channel = ""
     var subChannel = ""
+    var poiName = ""
 
     var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
 
-    @IBOutlet var photoCollectionView: UICollectionView!
+    let locationManager = CLLocationManager()
 
+    @IBOutlet var photoCollectionView: UICollectionView!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var titleCountLabel: UILabel!
     @IBOutlet var textView: UITextView!
-    @IBOutlet weak var channelIcon: UIImageView!
-    @IBOutlet weak var channelLabel: UILabel!
-    @IBOutlet weak var channelPlaceholderLabel: UILabel!
+    @IBOutlet var channelIcon: UIImageView!
+    @IBOutlet var channelLabel: UILabel!
+    @IBOutlet var channelPlaceholderLabel: UILabel!
+
+    @IBOutlet var poiNameIcon: UIImageView!
+    @IBOutlet var poiNameLabel: UILabel!
 
     var photoCount: Int { photos.count }
 
@@ -60,11 +65,14 @@ class NoteEditVC: UIViewController {
         titleCountLabel.text = "\(kMAxNoteTitleCount - titleTextField.unwrappedText.count)"
     }
 
-    // MARK 待做（存草稿和发布笔记之前需判断当前用户输入的正文文本数量，看是否大于最大可输入数量）
+    // MARK: 待做（存草稿和发布笔记之前需判断当前用户输入的正文文本数量，看是否大于最大可输入数量）
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
         if let channelVC = segue.destination as? ChannelVC {
             channelVC.pvDelegate = self
+        } else if let poiVC = segue.destination as? POIVC {
+            poiVC.delegate = self
+            poiVC.poiName = poiName
         }
     }
 }
@@ -87,6 +95,25 @@ extension NoteEditVC: ChannelVCDelegate {
         channelIcon.tintColor = blueColor
         channelLabel.textColor = blueColor
         channelPlaceholderLabel.isHidden = true
+    }
+}
+
+extension NoteEditVC: POIVCDelegate {
+    func updatePOIName(_ poiName: String) {
+        // 数据
+        if poiName == kPOIsInitArr[0][0] {
+            self.poiName = ""
+            // UI
+            poiNameIcon.tintColor = .label
+            poiNameLabel.text = "添加地点"
+            poiNameLabel.textColor = .label
+        } else {
+            self.poiName = poiName
+            // UI
+            poiNameIcon.tintColor = blueColor
+            poiNameLabel.text = poiName
+            poiNameLabel.textColor = blueColor
+        }
     }
 }
 
