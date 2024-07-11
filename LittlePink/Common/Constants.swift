@@ -34,3 +34,6 @@ let kChannels = ["推荐", "旅行", "娱乐", "才艺", "美妆", "白富美", 
 let kMaxCameraZoomFactor: CGFloat = 5
 let kMaxPhotoCount = 9 // picker选择时最多选择的图片数
 let kSpacingBetweenItems: CGFloat = 2
+
+let kMAxNoteTitleCount: Int = 20
+let kMaxNoteTextCount: Int = 1000

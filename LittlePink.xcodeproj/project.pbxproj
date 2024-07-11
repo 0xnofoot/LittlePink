@@ -27,6 +27,10 @@
 		DA8228482C3E5F8B00010942 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228472C3E5F8B00010942 /* PhotoFooter.swift */; };
 		DA82284C2C3E759100010942 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA82284B2C3E759100010942 /* testVideo.mp4 */; };
 		DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */; };
+		DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82284F2C3E870E00010942 /* NoteEditVC-CollectionView.swift */; };
+		DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */; };
+		DA8228542C3EBA3F00010942 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8228532C3EBA3F00010942 /* TextViewIAView.xib */; };
+		DA8228562C3EBA7C00010942 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228552C3EBA7C00010942 /* TextViewIAView.swift */; };
 		DAFC3B162C3BD327003DAB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */; };
 		DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */; };
 		DAFC3B1D2C3BD327003DAB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */; };
@@ -61,6 +65,10 @@
 		DA82284A2C3E6A2600010942 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA82284B2C3E759100010942 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
+		DA82284F2C3E870E00010942 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
+		DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
+		DA8228532C3EBA3F00010942 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
+		DA8228552C3EBA7C00010942 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
 		DAFC3B122C3BD327003DAB52 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,10 @@
 				DA8228412C3E2E2A00010942 /* PhotoCell.swift */,
 				DA8228472C3E5F8B00010942 /* PhotoFooter.swift */,
 				DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */,
+				DA82284F2C3E870E00010942 /* NoteEditVC-CollectionView.swift */,
+				DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */,
+				DA8228532C3EBA3F00010942 /* TextViewIAView.xib */,
+				DA8228552C3EBA7C00010942 /* TextViewIAView.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -262,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8228542C3EBA3F00010942 /* TextViewIAView.xib in Resources */,
 				DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */,
 				DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */,
 				DAFC3B252C3BD328003DAB52 /* LaunchScreen.storyboard in Resources */,
@@ -334,10 +347,13 @@
 				DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */,
 				DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */,
 				DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */,
+				DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */,
+				DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */,
 				DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */,
 				DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */,
 				DA769A712C3C0FCC002F6904 /* NearByVC.swift in Sources */,
 				DA8228452C3E3B5A00010942 /* TestCodingView.swift in Sources */,
+				DA8228562C3EBA7C00010942 /* TextViewIAView.swift in Sources */,
 				DA769A732C3C115C002F6904 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

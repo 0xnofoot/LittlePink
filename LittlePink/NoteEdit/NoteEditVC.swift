@@ -5,10 +5,7 @@
 //  Created by toofonwang on 2024/7/10.
 //
 
-import AVKit
-import SKPhotoBrowser
 import UIKit
-import YPImagePicker
 
 class NoteEditVC: UIViewController {
     var photos = [
@@ -17,116 +14,63 @@ class NoteEditVC: UIViewController {
 
     var videoURL: URL?
 
+    var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
+
     @IBOutlet var photoCollectionView: UICollectionView!
 
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var titleCountLabel: UILabel!
+    @IBOutlet var textView: UITextView!
     var photoCount: Int { photos.count }
 
     var isVideo: Bool { videoURL != nil }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // photoCollectionView.dragInteractionEnabled = true //开启拖放交互，新版已经默认为true
-    }
-}
-
-extension NoteEditVC: UICollectionViewDataSource {
-    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-        return photoCount
+        config()
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPhotoCellID, for: indexPath) as! PhotoCell
-
-        cell.imageView.image = photos[indexPath.item]
-
-        return cell
+    @IBAction func TFEditBegin(_: Any) {
+        titleCountLabel.isHidden = false
     }
 
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        switch kind {
-        case UICollectionView.elementKindSectionFooter:
-            let photofooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kPhotoFooterID, for: indexPath) as! PhotoFooter
-            photofooter.addPhotoBtn.addTarget(self, action: #selector(addPhoto), for: .touchUpInside)
-            return photofooter
-        default:
-            fatalError("collectionView的footer出问题了")
-        }
+    @IBAction func TFEditEnd(_: Any) {
+        titleCountLabel.isHidden = true
     }
-}
 
-// MARK: - SKPhotoBrowserDelegate
+    @IBAction func TFEndOnExit(_: Any) {}
 
-extension NoteEditVC: SKPhotoBrowserDelegate {
-    func removePhoto(_: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
-        photos.remove(at: index)
-        photoCollectionView.reloadData()
-        reload()
-    }
-}
+    @IBAction func TFEditChanged(_: Any) {
+        guard titleTextField.markedTextRange == nil else { return }
+        if titleTextField.unwrappedText.count > kMAxNoteTitleCount {
+            titleTextField.text = String(titleTextField.unwrappedText.prefix(kMAxNoteTitleCount))
 
-extension NoteEditVC: UICollectionViewDelegate {
-    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if isVideo {
-            let playerVC = AVPlayerViewController()
-            playerVC.player = AVPlayer(url: videoURL!)
-            present(playerVC, animated: true) {
-                playerVC.player?.play()
+            DispatchQueue.main.async {
+                let end = self.titleTextField.endOfDocument
+                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
             }
-        } else {
-            // 1. create SKPhoto Array from UIImage
-            var images: [SKPhoto] = []
-            for photo in photos {
-                images.append(SKPhoto.photoWithImage(photo))
-            }
-            // 2. create PhotoBrowser Instance, and present from your viewController.
-            let browser = SKPhotoBrowser(photos: images, initialPageIndex: indexPath.item)
-            browser.delegate = self
-            SKPhotoBrowserOptions.displayAction = false
-            SKPhotoBrowserOptions.displayDeleteButton = true
-            present(browser, animated: true)
         }
+        titleCountLabel.text = "\(kMAxNoteTitleCount - titleTextField.unwrappedText.count)"
+    }
+
+    // MARK 待做（存草稿和发布笔记之前需判断当前用户输入的正文文本数量，看是否大于最大可输入数量）
+}
+
+extension NoteEditVC: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.markedTextRange == nil else { return }
+        textViewIAView.currentTextCount = textView.text.count
     }
 }
 
-// MARK: - 监听
-
-extension NoteEditVC {
-    @objc private func addPhoto() {
-        if photoCount < kMaxPhotoCount {
-            var config = YPImagePickerConfiguration()
-
-            // MARK: 通用配置
-
-            config.albumName = Bundle.main.appName
-            config.screens = [.library]
-
-            // MARK: 相册配置
-
-            // 允许一个笔记发布单个视频或多张照片
-            config.library.defaultMultipleSelection = true
-            config.library.maxNumberOfItems = kMaxPhotoCount - photoCount
-            config.library.spacingBetweenItems = kSpacingBetweenItems
-
-            config.gallery.hidesRemoveButton = false
-
-            // MARK: 视频配置(默认)
-
-            let picker = YPImagePicker(configuration: config)
-
-            picker.didFinishPicking { [unowned picker] items, _ in
-                for item in items {
-                    if case let .photo(photo) = item {
-                        self.photos.append(photo.image)
-                    }
-                }
-
-                self.photoCollectionView.reloadData()
-
-                picker.dismiss(animated: true)
-            }
-            present(picker, animated: true)
-        } else {
-            showTextHUD("最多只能选择\(kMaxPhotoCount)张照片哦")
-        }
-    }
-}
+// extension NoteEditVC: UITextFieldDelegate {
+//     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//         let isExceed = range.location >= kMAxNoteTitleCount || (textField.unwrappedText.count + string.count) > kMAxNoteTitleCount
+//
+//         if isExceed {
+//             showTextHUD("标题最多输入\(kMAxNoteTitleCount)个字哦")
+//         }
+//
+//         return !isExceed
+//     }
+// }
