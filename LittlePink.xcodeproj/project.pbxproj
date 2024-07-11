@@ -31,6 +31,9 @@
 		DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */; };
 		DA8228542C3EBA3F00010942 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8228532C3EBA3F00010942 /* TextViewIAView.xib */; };
 		DA8228562C3EBA7C00010942 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228552C3EBA7C00010942 /* TextViewIAView.swift */; };
+		DA8228582C3F79E100010942 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228572C3F79E100010942 /* ChannelVC.swift */; };
+		DA82285A2C3F7BBA00010942 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228592C3F7BBA00010942 /* ChannelTableVC.swift */; };
+		DA82285C2C3F832000010942 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82285B2C3F832000010942 /* Protocols.swift */; };
 		DAFC3B162C3BD327003DAB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */; };
 		DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */; };
 		DAFC3B1D2C3BD327003DAB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
 		DA8228532C3EBA3F00010942 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
 		DA8228552C3EBA7C00010942 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
+		DA8228572C3F79E100010942 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		DA8228592C3F7BBA00010942 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
+		DA82285B2C3F832000010942 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DAFC3B122C3BD327003DAB52 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFC3B152C3BD327003DAB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFC3B172C3BD327003DAB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			children = (
 				DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */,
 				DA769A722C3C115C002F6904 /* Constants.swift */,
+				DA82285B2C3F832000010942 /* Protocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -158,6 +165,8 @@
 				DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */,
 				DA8228532C3EBA3F00010942 /* TextViewIAView.xib */,
 				DA8228552C3EBA7C00010942 /* TextViewIAView.swift */,
+				DA8228572C3F79E100010942 /* ChannelVC.swift */,
+				DA8228592C3F7BBA00010942 /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */,
 				DA769A792C3CCF0E002F6904 /* WaterfallVC.swift in Sources */,
 				DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */,
+				DA82285A2C3F7BBA00010942 /* ChannelTableVC.swift in Sources */,
 				DA769A7B2C3CD951002F6904 /* WaterfallCell.swift in Sources */,
 				DA8228402C3E26E200010942 /* NoteEditVC.swift in Sources */,
 				DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */,
@@ -348,6 +358,8 @@
 				DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */,
 				DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */,
 				DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */,
+				DA82285C2C3F832000010942 /* Protocols.swift in Sources */,
+				DA8228582C3F79E100010942 /* ChannelVC.swift in Sources */,
 				DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */,
 				DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */,
 				DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */,
