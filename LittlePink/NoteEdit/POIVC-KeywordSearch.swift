@@ -35,8 +35,8 @@ extension POIVC: AMapSearchDelegate {
     func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
         hideLoadHUD()
 
-        print(response.count)
-        print(response.pois.count)
+        // print(response.count)
+        // print(response.pois.count)
 
         if response.count == 0 {
             footer.endRefreshingWithNoMoreData()

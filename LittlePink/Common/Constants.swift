@@ -24,16 +24,29 @@ let kPhotoCellID = "PhotoCellID"
 let kPhotoFooterID = "PhotoFooterID"
 let kSubChannelCellID = "SubChannelCellID"
 let kPOICellID = "POICellID"
+let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
 
 // MARK: - 资源文件相关
 let mainColor = UIColor(named: "main")!
 let blueColor = UIColor(named: "blue")!
+let imagePH = UIImage(named: "imagePH")!
+
+
+// MARK: - CoreData
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+let persistentContainer = appDelegate.persistentContainer
+let context = persistentContainer.viewContext
+let backgroundContext = persistentContainer.newBackgroundContext()
+
+// MARK: - UI布局
+let screenRect = UIScreen.main.bounds
 
 // MARK: - 业务逻辑相关
 
 // 瀑布流
 
 let kWaterfallPadding: CGFloat = 4
+let kDraftNoteWaterfallCellBottomViewH: CGFloat = 84
 
 let kChannels = ["推荐", "旅行", "娱乐", "才艺", "美妆", "白富美", "美食", "萌宠"]
 

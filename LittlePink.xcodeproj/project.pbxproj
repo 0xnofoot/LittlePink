@@ -12,6 +12,15 @@
 		DA0AF9CD2C3FC90800C4BBCA /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9CC2C3FC90800C4BBCA /* POIVC-Config.swift */; };
 		DA0AF9CF2C3FC98900C4BBCA /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9CE2C3FC98900C4BBCA /* POIVC-Location.swift */; };
 		DA0AF9D32C3FF1E400C4BBCA /* POIVC-KeywordSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9D22C3FF1E400C4BBCA /* POIVC-KeywordSearch.swift */; };
+		DA0AF9D52C41008600C4BBCA /* DraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9D42C41008600C4BBCA /* DraftNoteWaterfallCell.swift */; };
+		DA0AF9D72C41106500C4BBCA /* WaterfallVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9D62C41106500C4BBCA /* WaterfallVC-LoadData.swift */; };
+		DA0AF9D92C4110A700C4BBCA /* WaterfallVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9D82C4110A700C4BBCA /* WaterfallVC-Config.swift */; };
+		DA0AF9DB2C41358E00C4BBCA /* Waterfall-Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9DA2C41358E00C4BBCA /* Waterfall-Datasource.swift */; };
+		DA0AF9DD2C415E2500C4BBCA /* WaterfallVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9DC2C415E2500C4BBCA /* WaterfallVC-Delegate.swift */; };
+		DA0AF9DF2C42211C00C4BBCA /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9DE2C42211C00C4BBCA /* NoteEditVC-Helper.swift */; };
+		DA0AF9E12C42227F00C4BBCA /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E02C42227F00C4BBCA /* NoteEditVC-UI.swift */; };
+		DA0AF9E32C42274E00C4BBCA /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E22C42274E00C4BBCA /* NoteEditVC-DraftNote.swift */; };
+		DA0AF9E52C422E4100C4BBCA /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E42C422E4100C4BBCA /* MeVC.swift */; };
 		DA6996562C3CE834006DDB2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA6996552C3CE834006DDB2B /* README.md */; };
 		DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6996622C3D11A5006DDB2B /* Localizable.strings */; };
 		DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA69966C2C3D15A6006DDB2B /* InfoPlist.strings */; };
@@ -29,7 +38,7 @@
 		DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228412C3E2E2A00010942 /* PhotoCell.swift */; };
 		DA8228452C3E3B5A00010942 /* TestCodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228442C3E3B5A00010942 /* TestCodingView.swift */; };
 		DA8228482C3E5F8B00010942 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228472C3E5F8B00010942 /* PhotoFooter.swift */; };
-		DA82284C2C3E759100010942 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA82284B2C3E759100010942 /* testVideo.mp4 */; };
+		DA82284C2C3E759100010942 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA82284B2C3E759100010942 /* TV.mp4 */; };
 		DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */; };
 		DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82284F2C3E870E00010942 /* NoteEditVC-CollectionView.swift */; };
 		DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */; };
@@ -54,6 +63,15 @@
 		DA0AF9CC2C3FC90800C4BBCA /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
 		DA0AF9CE2C3FC98900C4BBCA /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
 		DA0AF9D22C3FF1E400C4BBCA /* POIVC-KeywordSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-KeywordSearch.swift"; sourceTree = "<group>"; };
+		DA0AF9D42C41008600C4BBCA /* DraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
+		DA0AF9D62C41106500C4BBCA /* WaterfallVC-LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-LoadData.swift"; sourceTree = "<group>"; };
+		DA0AF9D82C4110A700C4BBCA /* WaterfallVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Config.swift"; sourceTree = "<group>"; };
+		DA0AF9DA2C41358E00C4BBCA /* Waterfall-Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Waterfall-Datasource.swift"; sourceTree = "<group>"; };
+		DA0AF9DC2C415E2500C4BBCA /* WaterfallVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Delegate.swift"; sourceTree = "<group>"; };
+		DA0AF9DE2C42211C00C4BBCA /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
+		DA0AF9E02C42227F00C4BBCA /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
+		DA0AF9E22C42274E00C4BBCA /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
+		DA0AF9E42C422E4100C4BBCA /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		DA6996552C3CE834006DDB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA6996582C3CEA15006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA69965C2C3D0CDB006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -75,7 +93,7 @@
 		DA8228442C3E3B5A00010942 /* TestCodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodingView.swift; sourceTree = "<group>"; };
 		DA8228472C3E5F8B00010942 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		DA82284A2C3E6A2600010942 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
-		DA82284B2C3E759100010942 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		DA82284B2C3E759100010942 /* TV.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV.mp4; sourceTree = "<group>"; };
 		DA82284D2C3E792600010942 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		DA82284F2C3E870E00010942 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
 		DA8228512C3EA3FD00010942 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
@@ -121,6 +139,11 @@
 			children = (
 				DA769A7A2C3CD951002F6904 /* WaterfallCell.swift */,
 				DA769A782C3CCF0E002F6904 /* WaterfallVC.swift */,
+				DA0AF9D42C41008600C4BBCA /* DraftNoteWaterfallCell.swift */,
+				DA0AF9D62C41106500C4BBCA /* WaterfallVC-LoadData.swift */,
+				DA0AF9D82C4110A700C4BBCA /* WaterfallVC-Config.swift */,
+				DA0AF9DA2C41358E00C4BBCA /* Waterfall-Datasource.swift */,
+				DA0AF9DC2C415E2500C4BBCA /* WaterfallVC-Delegate.swift */,
 			);
 			path = Waterfall;
 			sourceTree = "<group>";
@@ -182,6 +205,9 @@
 				DA0AF9CC2C3FC90800C4BBCA /* POIVC-Config.swift */,
 				DA0AF9CE2C3FC98900C4BBCA /* POIVC-Location.swift */,
 				DA0AF9D22C3FF1E400C4BBCA /* POIVC-KeywordSearch.swift */,
+				DA0AF9DE2C42211C00C4BBCA /* NoteEditVC-Helper.swift */,
+				DA0AF9E02C42227F00C4BBCA /* NoteEditVC-UI.swift */,
+				DA0AF9E22C42274E00C4BBCA /* NoteEditVC-DraftNote.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -213,6 +239,7 @@
 				DAFC3B232C3BD328003DAB52 /* LaunchScreen.storyboard */,
 				DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */,
 				DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */,
+				DA0AF9E42C422E4100C4BBCA /* MeVC.swift */,
 				DA769A752C3C131F002F6904 /* Home */,
 				DA6996532C3CE7A6006DDB2B /* Waterfall */,
 				DA8228492C3E641300010942 /* NoteEdit */,
@@ -223,7 +250,7 @@
 				DAFC3B262C3BD328003DAB52 /* Info.plist */,
 				DAFC3B1E2C3BD327003DAB52 /* LittlePink.xcdatamodeld */,
 				DA82284A2C3E6A2600010942 /* LittlePink-Bridging-Header.h */,
-				DA82284B2C3E759100010942 /* testVideo.mp4 */,
+				DA82284B2C3E759100010942 /* TV.mp4 */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -302,7 +329,7 @@
 				DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */,
 				DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */,
 				DAFC3B252C3BD328003DAB52 /* LaunchScreen.storyboard in Resources */,
-				DA82284C2C3E759100010942 /* testVideo.mp4 in Resources */,
+				DA82284C2C3E759100010942 /* TV.mp4 in Resources */,
 				DAFC3B222C3BD328003DAB52 /* Assets.xcassets in Resources */,
 				DA6996562C3CE834006DDB2B /* README.md in Resources */,
 				DAFC3B1D2C3BD327003DAB52 /* Main.storyboard in Resources */,
@@ -362,17 +389,23 @@
 				DAFC3B162C3BD327003DAB52 /* AppDelegate.swift in Sources */,
 				DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */,
 				DA769A792C3CCF0E002F6904 /* WaterfallVC.swift in Sources */,
+				DA0AF9DF2C42211C00C4BBCA /* NoteEditVC-Helper.swift in Sources */,
+				DA0AF9D52C41008600C4BBCA /* DraftNoteWaterfallCell.swift in Sources */,
 				DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */,
 				DA82285A2C3F7BBA00010942 /* ChannelTableVC.swift in Sources */,
+				DA0AF9D72C41106500C4BBCA /* WaterfallVC-LoadData.swift in Sources */,
+				DA0AF9DB2C41358E00C4BBCA /* Waterfall-Datasource.swift in Sources */,
 				DA769A7B2C3CD951002F6904 /* WaterfallCell.swift in Sources */,
 				DA8228402C3E26E200010942 /* NoteEditVC.swift in Sources */,
 				DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */,
 				DA769A6D2C3C0FA1002F6904 /* FollowVC.swift in Sources */,
+				DA0AF9E12C42227F00C4BBCA /* NoteEditVC-UI.swift in Sources */,
 				DA6CAA1D2C3D210900ADB1DC /* PostVC.swift in Sources */,
 				DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */,
 				DA0AF9CB2C3FC26B00C4BBCA /* POICell.swift in Sources */,
 				DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */,
 				DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */,
+				DA0AF9D92C4110A700C4BBCA /* WaterfallVC-Config.swift in Sources */,
 				DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */,
 				DA82285C2C3F832000010942 /* Protocols.swift in Sources */,
 				DA8228582C3F79E100010942 /* ChannelVC.swift in Sources */,
@@ -380,12 +413,15 @@
 				DA0AF9CD2C3FC90800C4BBCA /* POIVC-Config.swift in Sources */,
 				DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */,
 				DA0AF9D32C3FF1E400C4BBCA /* POIVC-KeywordSearch.swift in Sources */,
+				DA0AF9E52C422E4100C4BBCA /* MeVC.swift in Sources */,
 				DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */,
 				DA0AF9CF2C3FC98900C4BBCA /* POIVC-Location.swift in Sources */,
 				DA769A712C3C0FCC002F6904 /* NearByVC.swift in Sources */,
+				DA0AF9E32C42274E00C4BBCA /* NoteEditVC-DraftNote.swift in Sources */,
 				DA8228452C3E3B5A00010942 /* TestCodingView.swift in Sources */,
 				DA8228562C3EBA7C00010942 /* TextViewIAView.swift in Sources */,
 				DA769A732C3C115C002F6904 /* Constants.swift in Sources */,
+				DA0AF9DD2C415E2500C4BBCA /* WaterfallVC-Delegate.swift in Sources */,
 				DA82285E2C3F998500010942 /* POIVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,10 +8,15 @@
 import UIKit
 
 class NoteEditVC: UIViewController {
+    var draftNote: DraftNote?
+
+    var updateDraftNoteFinished: (() -> Void)?
+
     var photos = [
         UIImage(named: "1")!, UIImage(named: "2")!,
     ]
 
+    // var videoURL: URL? = Bundle.main.url(forResource: "TV", withExtension: "mp4")
     var videoURL: URL?
 
     var channel = ""
@@ -40,6 +45,11 @@ class NoteEditVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
+        setUI()
+
+        // print(NSHomeDirectory())
+        // print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, false)[0])
+        // print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0])
     }
 
     @IBAction func TFEditBegin(_: Any) {
@@ -53,22 +63,28 @@ class NoteEditVC: UIViewController {
     @IBAction func TFEndOnExit(_: Any) {}
 
     @IBAction func TFEditChanged(_: Any) {
-        guard titleTextField.markedTextRange == nil else { return }
-        if titleTextField.unwrappedText.count > kMAxNoteTitleCount {
-            titleTextField.text = String(titleTextField.unwrappedText.prefix(kMAxNoteTitleCount))
-
-            DispatchQueue.main.async {
-                let end = self.titleTextField.endOfDocument
-                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
-            }
-        }
-        titleCountLabel.text = "\(kMAxNoteTitleCount - titleTextField.unwrappedText.count)"
+        handleTFEditChanged()
     }
 
-    // MARK: 待做（存草稿和发布笔记之前需判断当前用户输入的正文文本数量，看是否大于最大可输入数量）
+    // MARK: - 存草稿
+
+    @IBAction func saveDraftNote(_: Any) {
+        guard isValidateNote() else { return }
+
+        if let draftNote = draftNote {
+            updateDraftNote(draftNote)
+        } else {
+            createDraftNote()
+        }
+    }
+
+    @IBAction func postNote(_: Any) {
+        guard isValidateNote() else { return }
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
         if let channelVC = segue.destination as? ChannelVC {
+            view.endEditing(true)
             channelVC.pvDelegate = self
         } else if let poiVC = segue.destination as? POIVC {
             poiVC.delegate = self
@@ -91,10 +107,7 @@ extension NoteEditVC: ChannelVCDelegate {
         self.subChannel = subChannel
 
         // UI
-        channelLabel.text = subChannel
-        channelIcon.tintColor = blueColor
-        channelLabel.textColor = blueColor
-        channelPlaceholderLabel.isHidden = true
+        updateChannelUI()
     }
 }
 
@@ -104,15 +117,11 @@ extension NoteEditVC: POIVCDelegate {
         if poiName == kPOIsInitArr[0][0] {
             self.poiName = ""
             // UI
-            poiNameIcon.tintColor = .label
-            poiNameLabel.text = "添加地点"
-            poiNameLabel.textColor = .label
+            updatePOINameUI()
         } else {
             self.poiName = poiName
             // UI
-            poiNameIcon.tintColor = blueColor
-            poiNameLabel.text = poiName
-            poiNameLabel.textColor = blueColor
+            updatePOINameUI()
         }
     }
 }

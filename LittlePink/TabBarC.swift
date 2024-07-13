@@ -47,19 +47,30 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             picker.didFinishPicking { [unowned picker] items, cancelled in
 
                 if cancelled {
-                    print("用户按下了左上角取消按钮")
-                }
+                    picker.dismiss(animated: true)
+                } else {
 
-                for item in items {
-                    switch item {
-                    case let .photo(p: photo):
-                        print(photo)
-                    case let .video(v: video):
-                        print(video)
+                    var photos: [UIImage] = []
+                    var videoURL: URL?
+
+                    for item in items {
+                        switch item {
+                        case let .photo(p: photo):
+                            photos.append(photo.image)
+                        case let .video(v: video):
+                            // let url = URL(fileURLWithPath: "recordedVideoRAW.mov", relativeTo: FileManager.default.temporaryDirectory)
+                            // photos.append(url.thumbnail)
+                            photos.append(video.thumbnail)
+                            videoURL = video.url
+                        }
                     }
-                }
 
-                picker.dismiss(animated: true, completion: nil)
+                    let vc = self.storyboard?.instantiateViewController(identifier: kNoteEditVCID) as! NoteEditVC
+                    vc.photos = photos
+                    vc.videoURL = videoURL
+                    picker.pushViewController(vc, animated: true)
+
+                }
             }
             present(picker, animated: true, completion: nil)
 
