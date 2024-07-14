@@ -22,6 +22,7 @@ class NoteEditVC: UIViewController {
     var channel = ""
     var subChannel = ""
     var poiName = ""
+    var poiLocation = ""
 
     var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
 
@@ -89,6 +90,7 @@ class NoteEditVC: UIViewController {
         } else if let poiVC = segue.destination as? POIVC {
             poiVC.delegate = self
             poiVC.poiName = poiName
+            poiVC.poiLocation = poiLocation
         }
     }
 }
@@ -112,14 +114,16 @@ extension NoteEditVC: ChannelVCDelegate {
 }
 
 extension NoteEditVC: POIVCDelegate {
-    func updatePOIName(_ poiName: String) {
+    func updatePOIName(_ poiName: String, _ poiLocation: String) {
         // 数据
         if poiName == kPOIsInitArr[0][0] {
             self.poiName = ""
+            self.poiLocation = ""
             // UI
             updatePOINameUI()
         } else {
             self.poiName = poiName
+            self.poiLocation = poiLocation
             // UI
             updatePOINameUI()
         }

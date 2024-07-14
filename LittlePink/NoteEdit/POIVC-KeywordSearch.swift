@@ -40,6 +40,7 @@ extension POIVC: AMapSearchDelegate {
 
         if response.count == 0 {
             footer.endRefreshingWithNoMoreData()
+            tableView.reloadData()
             return
         }
 

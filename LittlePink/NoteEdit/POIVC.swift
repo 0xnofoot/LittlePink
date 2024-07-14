@@ -11,6 +11,7 @@ class POIVC: UIViewController {
     var delegate: POIVCDelegate?
 
     var poiName = ""
+    var poiLocation = ""
 
     lazy var locationManager = AMapLocationManager()
 
@@ -56,7 +57,6 @@ class POIVC: UIViewController {
     }
 }
 
-
 extension POIVC: UITableViewDataSource {
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return pois.count
@@ -72,7 +72,7 @@ extension POIVC: UITableViewDataSource {
         let poi = pois[indexPath.row]
         cell.poi = poi
 
-        if poi[0] == poiName {
+        if poi[0] == poiName && poi[1] == poiLocation{
             cell.accessoryType = .checkmark
         }
         return cell
@@ -84,9 +84,9 @@ extension POIVC: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath)!
         cell.accessoryType = .checkmark
 
-        delegate?.updatePOIName(pois[indexPath.row][0])
+        print(pois)
+        delegate?.updatePOIName(pois[indexPath.row][0], pois[indexPath.row][1])
 
         dismiss(animated: true)
     }
 }
-
