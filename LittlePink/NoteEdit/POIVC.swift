@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - POIVC
+
 class POIVC: UIViewController {
     var delegate: POIVCDelegate?
 
@@ -21,7 +23,10 @@ class POIVC: UIViewController {
     lazy var aroundSearchRequest: AMapPOIAroundSearchRequest = {
         let request = AMapPOIAroundSearchRequest()
 
-        request.location = AMapGeoPoint.location(withLatitude: CGFloat(latitude), longitude: CGFloat(longtitude))
+        request.location = AMapGeoPoint.location(
+            withLatitude: CGFloat(latitude),
+            longitude: CGFloat(longtitude)
+        )
         request.offset = kPOIsOffset
         // request.types = kPOITypes
         return request
@@ -48,8 +53,11 @@ class POIVC: UIViewController {
     var currentAroundPage = 1
     var currentKeywordsPage = 1
 
-    @IBOutlet var tableView: UITableView!
-    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet
+    var tableView: UITableView!
+    @IBOutlet
+    var searchBar: UISearchBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -57,27 +65,34 @@ class POIVC: UIViewController {
     }
 }
 
+// MARK: UITableViewDataSource
+
 extension POIVC: UITableViewDataSource {
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return pois.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kPOICellID, for: indexPath) as! POICell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: kPOICellID,
+            for: indexPath
+        ) as! POICell
 
         // print("pois.count:\(pois.count)")
         // print("\(indexPath.row)")
 
-        guard pois.count > 0 else { return cell }
+        guard !pois.isEmpty else { return cell }
         let poi = pois[indexPath.row]
         cell.poi = poi
 
-        if poi[0] == poiName && poi[1] == poiLocation{
+        if poi[0] == poiName && poi[1] == poiLocation {
             cell.accessoryType = .checkmark
         }
         return cell
     }
 }
+
+// MARK: UITableViewDelegate
 
 extension POIVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

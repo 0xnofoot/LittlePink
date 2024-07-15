@@ -15,7 +15,7 @@ extension NoteEditVC {
         }
 
         guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
-            showTextHUD("标题最多输入\(kMAxNoteTitleCount)字哦")
+            showTextHUD("标题最多输入\(kMaxNoteTitleCount)字哦")
             return false
         }
 
@@ -24,16 +24,19 @@ extension NoteEditVC {
 
     func handleTFEditChanged() {
         guard titleTextField.markedTextRange == nil else { return }
-        if titleTextField.unwrappedText.count > kMAxNoteTitleCount {
-            titleTextField.text = String(titleTextField.unwrappedText.prefix(kMAxNoteTitleCount))
+        if titleTextField.unwrappedText.count > kMaxNoteTitleCount {
+            titleTextField.text = String(titleTextField.unwrappedText.prefix(kMaxNoteTitleCount))
 
-            showTextHUD("标题最多输入\(kMAxNoteTitleCount)字哦")
+            showTextHUD("标题最多输入\(kMaxNoteTitleCount)字哦")
 
             DispatchQueue.main.async {
                 let end = self.titleTextField.endOfDocument
-                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
+                self.titleTextField.selectedTextRange = self.titleTextField.textRange(
+                    from: end,
+                    to: end
+                )
             }
         }
-        titleCountLabel.text = "\(kMAxNoteTitleCount - titleTextField.unwrappedText.count)"
+        titleCountLabel.text = "\(kMaxNoteTitleCount - titleTextField.unwrappedText.count)"
     }
 }

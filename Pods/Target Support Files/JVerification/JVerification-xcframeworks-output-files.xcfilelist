@@ -1,0 +1,4 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/EAccountApiSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/jverification-ios-3.2.3.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/OAuth.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/TYRZUISDK.framework

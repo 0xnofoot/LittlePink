@@ -36,7 +36,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
     override func viewControllers(for _: PagerTabStripViewController) -> [UIViewController] {
         let followVC = storyboard!.instantiateViewController(identifier: kFollowVCID)
         let nearyByVC = storyboard!.instantiateViewController(identifier: kNearByVCID)
-        let discoveryVC = storyboard!.instantiateViewController(identifier: kDiscoveryVCID)
+        let discoveryVC = storyboard!.instantiateViewController(identifier: kDisCoveryVCID)
 
         return [discoveryVC, followVC, nearyByVC]
     }

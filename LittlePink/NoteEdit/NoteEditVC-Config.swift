@@ -11,7 +11,7 @@ extension NoteEditVC {
     func config() {
         // photoCollectionView.dragInteractionEnabled = true //开启拖放交互，新版已经默认为true
         hideKeyboardWhenTappedAround()
-        titleCountLabel.text = "\(kMAxNoteTitleCount)"
+        titleCountLabel.text = "\(kMaxNoteTitleCount)"
 
         let lineFragmentPadding = textView.textContainer.lineFragmentPadding
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -lineFragmentPadding, bottom: 0, right: -lineFragmentPadding)

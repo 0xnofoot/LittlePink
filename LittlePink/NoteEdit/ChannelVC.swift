@@ -9,7 +9,6 @@ import UIKit
 import XLPagerTabStrip
 
 class ChannelVC: ButtonBarPagerTabStripViewController {
-
     var pvDelegate: ChannelVCDelegate?
 
     override func viewDidLoad() {
@@ -22,11 +21,13 @@ class ChannelVC: ButtonBarPagerTabStripViewController {
 
         containerView.bounces = false
         changeCurrentIndexProgressive = {
-            (oldCell: ButtonBarViewCell?,
-             newCell: ButtonBarViewCell?,
-             _: CGFloat,
-             changeCurrentIndex: Bool,
-             _: Bool) in
+            (
+                oldCell: ButtonBarViewCell?,
+                newCell: ButtonBarViewCell?,
+                _: CGFloat,
+                changeCurrentIndex: Bool,
+                _: Bool
+            ) in
             guard changeCurrentIndex == true else { return }
             oldCell?.label.textColor = .secondaryLabel
             newCell?.label.textColor = .label
@@ -36,7 +37,8 @@ class ChannelVC: ButtonBarPagerTabStripViewController {
     override func viewControllers(for _: PagerTabStripViewController) -> [UIViewController] {
         var vcs: [UIViewController] = []
         for i in kChannels.indices {
-            let vc = storyboard!.instantiateViewController(identifier: kChannelTableVCID) as! ChannelTableVC
+            let vc = storyboard!
+                .instantiateViewController(identifier: kChannelTableVCID) as! ChannelTableVC
             vc.channel = kChannels[i]
             vc.subChannels = kAllSubChannels[i]
             vcs.append(vc)

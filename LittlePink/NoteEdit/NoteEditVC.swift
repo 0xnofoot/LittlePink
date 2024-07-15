@@ -7,10 +7,12 @@
 
 import UIKit
 
+// MARK: - NoteEditVC
+
 class NoteEditVC: UIViewController {
     var draftNote: DraftNote?
 
-    var updateDraftNoteFinished: (() -> Void)?
+    var updateDraftNoteFinished: (() -> ())?
 
     var photos = [
         UIImage(named: "1")!, UIImage(named: "2")!,
@@ -24,20 +26,29 @@ class NoteEditVC: UIViewController {
     var poiName = ""
     var poiLocation = ""
 
-    var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
-
     let locationManager = CLLocationManager()
 
-    @IBOutlet var photoCollectionView: UICollectionView!
-    @IBOutlet var titleTextField: UITextField!
-    @IBOutlet var titleCountLabel: UILabel!
-    @IBOutlet var textView: UITextView!
-    @IBOutlet var channelIcon: UIImageView!
-    @IBOutlet var channelLabel: UILabel!
-    @IBOutlet var channelPlaceholderLabel: UILabel!
+    @IBOutlet
+    var photoCollectionView: UICollectionView!
+    @IBOutlet
+    var titleTextField: UITextField!
+    @IBOutlet
+    var titleCountLabel: UILabel!
+    @IBOutlet
+    var textView: UITextView!
+    @IBOutlet
+    var channelIcon: UIImageView!
+    @IBOutlet
+    var channelLabel: UILabel!
+    @IBOutlet
+    var channelPlaceholderLabel: UILabel!
 
-    @IBOutlet var poiNameIcon: UIImageView!
-    @IBOutlet var poiNameLabel: UILabel!
+    @IBOutlet
+    var poiNameIcon: UIImageView!
+    @IBOutlet
+    var poiNameLabel: UILabel!
+
+    var textViewIAView: TextViewIAView { textView.inputAccessoryView as! TextViewIAView }
 
     var photoCount: Int { photos.count }
 
@@ -53,23 +64,28 @@ class NoteEditVC: UIViewController {
         // print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0])
     }
 
-    @IBAction func TFEditBegin(_: Any) {
+    @IBAction
+    func TFEditBegin(_: Any) {
         titleCountLabel.isHidden = false
     }
 
-    @IBAction func TFEditEnd(_: Any) {
+    @IBAction
+    func TFEditEnd(_: Any) {
         titleCountLabel.isHidden = true
     }
 
-    @IBAction func TFEndOnExit(_: Any) {}
+    @IBAction
+    func TFEndOnExit(_: Any) {}
 
-    @IBAction func TFEditChanged(_: Any) {
+    @IBAction
+    func TFEditChanged(_: Any) {
         handleTFEditChanged()
     }
 
     // MARK: - 存草稿
 
-    @IBAction func saveDraftNote(_: Any) {
+    @IBAction
+    func saveDraftNote(_: Any) {
         guard isValidateNote() else { return }
 
         if let draftNote = draftNote {
@@ -79,7 +95,8 @@ class NoteEditVC: UIViewController {
         }
     }
 
-    @IBAction func postNote(_: Any) {
+    @IBAction
+    func postNote(_: Any) {
         guard isValidateNote() else { return }
     }
 
@@ -95,12 +112,16 @@ class NoteEditVC: UIViewController {
     }
 }
 
+// MARK: UITextViewDelegate
+
 extension NoteEditVC: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         guard textView.markedTextRange == nil else { return }
         textViewIAView.currentTextCount = textView.text.count
     }
 }
+
+// MARK: ChannelVCDelegate
 
 extension NoteEditVC: ChannelVCDelegate {
     func updateChannel(channel: String, subChannel: String) {
@@ -112,6 +133,8 @@ extension NoteEditVC: ChannelVCDelegate {
         updateChannelUI()
     }
 }
+
+// MARK: POIVCDelegate
 
 extension NoteEditVC: POIVCDelegate {
     func updatePOIName(_ poiName: String, _ poiLocation: String) {

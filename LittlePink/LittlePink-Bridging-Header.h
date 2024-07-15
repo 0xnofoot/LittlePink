@@ -21,3 +21,6 @@
 
 #import <AMapSearchKit/AMapSearchKit.h>
 
+#import "JVERIFICATIONService.h"
+
+#import <AlipaySDK/AlipaySDK.h>

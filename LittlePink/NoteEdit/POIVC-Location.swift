@@ -50,7 +50,7 @@ extension POIVC {
             if let reGeocode = reGeocode {
                 guard let formattedArrress = reGeocode.formattedAddress, !formattedArrress.isEmpty else { return }
                 let province = reGeocode.province == reGeocode.city ? "" : reGeocode.province
-                let currentPOI = [reGeocode.poiName ?? kNoPoiPH,
+                let currentPOI = [reGeocode.poiName ?? kNoPOIPH,
                                   "\(province.unwrappedText)\(reGeocode.city.unwrappedText)\(reGeocode.district.unwrappedText)\(reGeocode.street.unwrappedText)\(reGeocode.number.unwrappedText)"]
                 POIVC.pois.append(currentPOI)
                 POIVC.aroundSearchPOIs.append(currentPOI)

@@ -48,7 +48,7 @@ extension POIVC: AMapSearchDelegate {
             let province = poi.province == poi.city ? "" : poi.province
             let address = poi.district == poi.address ? "" : poi.address
             let poi = [
-                poi.name ?? kNoPoiPH,
+                poi.name ?? kNoPOIPH,
                 "\(province.unwrappedText)\(poi.city.unwrappedText)\(poi.district.unwrappedText)\(address.unwrappedText)",
             ]
             pois.append(poi)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1F4F2EE7915F47E724CA4BB /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */; };
+		04A2BFC73D7178AFD0D50288 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844EA4BA75E53D2F2E12552 /* Pods_LittlePink.framework */; };
 		DA0AF9CB2C3FC26B00C4BBCA /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9CA2C3FC26B00C4BBCA /* POICell.swift */; };
 		DA0AF9CD2C3FC90800C4BBCA /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9CC2C3FC90800C4BBCA /* POIVC-Config.swift */; };
 		DA0AF9CF2C3FC98900C4BBCA /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9CE2C3FC98900C4BBCA /* POIVC-Location.swift */; };
@@ -21,12 +21,19 @@
 		DA0AF9E12C42227F00C4BBCA /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E02C42227F00C4BBCA /* NoteEditVC-UI.swift */; };
 		DA0AF9E32C42274E00C4BBCA /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E22C42274E00C4BBCA /* NoteEditVC-DraftNote.swift */; };
 		DA0AF9E52C422E4100C4BBCA /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9E42C422E4100C4BBCA /* MeVC.swift */; };
+		DA0AF9F92C43C14A00C4BBCA /* LocalLogin-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9F72C43C14A00C4BBCA /* LocalLogin-Extensions.swift */; };
+		DA0AF9FA2C43C14A00C4BBCA /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9F82C43C14A00C4BBCA /* Login-Extensions.swift */; };
+		DA0AF9FC2C43C53500C4BBCA /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9FB2C43C53500C4BBCA /* LC-Extensions.swift */; };
+		DA0AFA002C43C5AC00C4BBCA /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF9FF2C43C5AB00C4BBCA /* LoginAndMeParentVC.swift */; };
+		DA0AFA072C43C85500C4BBCA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AFA032C43C85500C4BBCA /* LoginVC.swift */; };
+		DA2660E82C43D0B3006E49AF /* PasswordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2660E62C43D0B2006E49AF /* PasswordLoginVC.swift */; };
+		DA2660E92C43D0B3006E49AF /* CodeLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2660E72C43D0B3006E49AF /* CodeLoginVC.swift */; };
 		DA6996562C3CE834006DDB2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA6996552C3CE834006DDB2B /* README.md */; };
 		DA6996642C3D11A5006DDB2B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6996622C3D11A5006DDB2B /* Localizable.strings */; };
 		DA69966A2C3D15A6006DDB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA69966C2C3D15A6006DDB2B /* InfoPlist.strings */; };
 		DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */; };
 		DA6CAA1D2C3D210900ADB1DC /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1C2C3D210900ADB1DC /* PostVC.swift */; };
-		DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */; };
+		DA6CAA1F2C3D2FCC00ADB1DC /* System-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA1E2C3D2FCC00ADB1DC /* System-Extension.swift */; };
 		DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6A2C3C0C39002F6904 /* HomeVC.swift */; };
 		DA769A6D2C3C0FA1002F6904 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6C2C3C0FA1002F6904 /* FollowVC.swift */; };
 		DA769A6F2C3C0FB8002F6904 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA769A6E2C3C0FB8002F6904 /* DiscoveryVC.swift */; };
@@ -57,8 +64,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		1761E734C17FA3974E45F943 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		226BD76532EBD5CB02C65C9B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		7844EA4BA75E53D2F2E12552 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0AF9CA2C3FC26B00C4BBCA /* POICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
 		DA0AF9CC2C3FC90800C4BBCA /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
 		DA0AF9CE2C3FC98900C4BBCA /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
@@ -72,6 +80,15 @@
 		DA0AF9E02C42227F00C4BBCA /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
 		DA0AF9E22C42274E00C4BBCA /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
 		DA0AF9E42C422E4100C4BBCA /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		DA0AF9F72C43C14A00C4BBCA /* LocalLogin-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extensions.swift"; sourceTree = "<group>"; };
+		DA0AF9F82C43C14A00C4BBCA /* Login-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
+		DA0AF9FB2C43C53500C4BBCA /* LC-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
+		DA0AF9FF2C43C5AB00C4BBCA /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
+		DA0AFA032C43C85500C4BBCA /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DA0AFA0B2C43CA5F00C4BBCA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = AliSDKDemo/libcrypto.a; sourceTree = "<group>"; };
+		DA0AFA0D2C43CA6300C4BBCA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = AliSDKDemo/libssl.a; sourceTree = "<group>"; };
+		DA2660E62C43D0B2006E49AF /* PasswordLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordLoginVC.swift; sourceTree = "<group>"; };
+		DA2660E72C43D0B3006E49AF /* CodeLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeLoginVC.swift; sourceTree = "<group>"; };
 		DA6996552C3CE834006DDB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA6996582C3CEA15006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA69965C2C3D0CDB006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -80,7 +97,7 @@
 		DA69966B2C3D15A6006DDB2B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		DA6CAA1C2C3D210900ADB1DC /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
-		DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DA6CAA1E2C3D2FCC00ADB1DC /* System-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System-Extension.swift"; sourceTree = "<group>"; };
 		DA769A6A2C3C0C39002F6904 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DA769A6C2C3C0FA1002F6904 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		DA769A6E2C3C0FB8002F6904 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -111,7 +128,6 @@
 		DAFC3B212C3BD328003DAB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFC3B242C3BD328003DAB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFC3B262C3BD328003DAB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F4F2EE7915F47E724CA4BB /* Pods_LittlePink.framework in Frameworks */,
+				04A2BFC73D7178AFD0D50288 /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +145,41 @@
 		1E739D9AC2F673ABD85AD346 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C28F1A671CE8C3D3C23EBBA9 /* Pods_LittlePink.framework */,
+				DA0AFA0D2C43CA6300C4BBCA /* libssl.a */,
+				DA0AFA0B2C43CA5F00C4BBCA /* libcrypto.a */,
+				7844EA4BA75E53D2F2E12552 /* Pods_LittlePink.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA0AF9F62C43C12000C4BBCA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AF9F72C43C14A00C4BBCA /* LocalLogin-Extensions.swift */,
+				DA0AF9F82C43C14A00C4BBCA /* Login-Extensions.swift */,
+				DA6CAA1E2C3D2FCC00ADB1DC /* System-Extension.swift */,
+				DA0AF9FB2C43C53500C4BBCA /* LC-Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA0AF9FE2C43C59500C4BBCA /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AF9FF2C43C5AB00C4BBCA /* LoginAndMeParentVC.swift */,
+				DA0AF9E42C422E4100C4BBCA /* MeVC.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		DA2660EC2C44BF9D006E49AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AFA032C43C85500C4BBCA /* LoginVC.swift */,
+				DA2660E72C43D0B3006E49AF /* CodeLoginVC.swift */,
+				DA2660E62C43D0B2006E49AF /* PasswordLoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		DA6996532C3CE7A6006DDB2B /* Waterfall */ = {
@@ -151,7 +199,7 @@
 		DA6996542C3CE7CF006DDB2B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DA6CAA1E2C3D2FCC00ADB1DC /* Extension.swift */,
+				DA0AF9F62C43C12000C4BBCA /* Extension */,
 				DA769A722C3C115C002F6904 /* Constants.swift */,
 				DA82285B2C3F832000010942 /* Protocols.swift */,
 			);
@@ -239,7 +287,8 @@
 				DAFC3B232C3BD328003DAB52 /* LaunchScreen.storyboard */,
 				DAFC3B1B2C3BD327003DAB52 /* Main.storyboard */,
 				DA6CAA1A2C3D1F1600ADB1DC /* TabBarC.swift */,
-				DA0AF9E42C422E4100C4BBCA /* MeVC.swift */,
+				DA2660EC2C44BF9D006E49AF /* Login */,
+				DA0AF9FE2C43C59500C4BBCA /* Me */,
 				DA769A752C3C131F002F6904 /* Home */,
 				DA6996532C3CE7A6006DDB2B /* Waterfall */,
 				DA8228492C3E641300010942 /* NoteEdit */,
@@ -258,8 +307,8 @@
 		E5EDA70E77C4ECE1D11D4740 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */,
-				CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */,
+				226BD76532EBD5CB02C65C9B /* Pods-LittlePink.debug.xcconfig */,
+				1761E734C17FA3974E45F943 /* Pods-LittlePink.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -271,11 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFC3B292C3BD328003DAB52 /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
-				9E971649E651661ABB74DC63 /* [CP] Check Pods Manifest.lock */,
+				874CC363710D6467C6A54FFB /* [CP] Check Pods Manifest.lock */,
 				DAFC3B0E2C3BD327003DAB52 /* Sources */,
 				DAFC3B0F2C3BD327003DAB52 /* Frameworks */,
 				DAFC3B102C3BD327003DAB52 /* Resources */,
-				883BADBFEEDB60E21D148304 /* [CP] Embed Pods Frameworks */,
+				E72AEA8A27BF63687C6426C2 /* [CP] Embed Pods Frameworks */,
+				39E392970A48E21DB9C1F12F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,24 +389,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		883BADBFEEDB60E21D148304 /* [CP] Embed Pods Frameworks */ = {
+		39E392970A48E21DB9C1F12F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E971649E651661ABB74DC63 /* [CP] Check Pods Manifest.lock */ = {
+		874CC363710D6467C6A54FFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,6 +428,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E72AEA8A27BF63687C6426C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -390,13 +457,16 @@
 				DA8228422C3E2E2A00010942 /* PhotoCell.swift in Sources */,
 				DA769A792C3CCF0E002F6904 /* WaterfallVC.swift in Sources */,
 				DA0AF9DF2C42211C00C4BBCA /* NoteEditVC-Helper.swift in Sources */,
+				DA2660E82C43D0B3006E49AF /* PasswordLoginVC.swift in Sources */,
 				DA0AF9D52C41008600C4BBCA /* DraftNoteWaterfallCell.swift in Sources */,
 				DA6CAA1B2C3D1F1600ADB1DC /* TabBarC.swift in Sources */,
 				DA82285A2C3F7BBA00010942 /* ChannelTableVC.swift in Sources */,
 				DA0AF9D72C41106500C4BBCA /* WaterfallVC-LoadData.swift in Sources */,
 				DA0AF9DB2C41358E00C4BBCA /* Waterfall-Datasource.swift in Sources */,
+				DA0AF9FC2C43C53500C4BBCA /* LC-Extensions.swift in Sources */,
 				DA769A7B2C3CD951002F6904 /* WaterfallCell.swift in Sources */,
 				DA8228402C3E26E200010942 /* NoteEditVC.swift in Sources */,
+				DA0AFA072C43C85500C4BBCA /* LoginVC.swift in Sources */,
 				DA769A6B2C3C0C39002F6904 /* HomeVC.swift in Sources */,
 				DA769A6D2C3C0FA1002F6904 /* FollowVC.swift in Sources */,
 				DA0AF9E12C42227F00C4BBCA /* NoteEditVC-UI.swift in Sources */,
@@ -404,11 +474,13 @@
 				DAFC3B182C3BD327003DAB52 /* SceneDelegate.swift in Sources */,
 				DA0AF9CB2C3FC26B00C4BBCA /* POICell.swift in Sources */,
 				DAFC3B202C3BD327003DAB52 /* LittlePink.xcdatamodeld in Sources */,
-				DA6CAA1F2C3D2FCC00ADB1DC /* Extension.swift in Sources */,
+				DA6CAA1F2C3D2FCC00ADB1DC /* System-Extension.swift in Sources */,
 				DA0AF9D92C4110A700C4BBCA /* WaterfallVC-Config.swift in Sources */,
+				DA0AFA002C43C5AC00C4BBCA /* LoginAndMeParentVC.swift in Sources */,
 				DA8228502C3E870E00010942 /* NoteEditVC-CollectionView.swift in Sources */,
 				DA82285C2C3F832000010942 /* Protocols.swift in Sources */,
 				DA8228582C3F79E100010942 /* ChannelVC.swift in Sources */,
+				DA0AF9F92C43C14A00C4BBCA /* LocalLogin-Extensions.swift in Sources */,
 				DA8228522C3EA3FD00010942 /* NoteEditVC-Config.swift in Sources */,
 				DA0AF9CD2C3FC90800C4BBCA /* POIVC-Config.swift in Sources */,
 				DA82284E2C3E792600010942 /* NoteEditVC-DragDrop.swift in Sources */,
@@ -423,6 +495,8 @@
 				DA769A732C3C115C002F6904 /* Constants.swift in Sources */,
 				DA0AF9DD2C415E2500C4BBCA /* WaterfallVC-Delegate.swift in Sources */,
 				DA82285E2C3F998500010942 /* POIVC.swift in Sources */,
+				DA2660E92C43D0B3006E49AF /* CodeLoginVC.swift in Sources */,
+				DA0AF9FA2C43C14A00C4BBCA /* Login-Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +664,7 @@
 		};
 		DAFC3B2A2C3BD328003DAB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8150564A4B1F2DB6E2BC61D /* Pods-LittlePink.debug.xcconfig */;
+			baseConfigurationReference = 226BD76532EBD5CB02C65C9B /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,6 +677,25 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DateToolsSwift/DateToolsSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GRDB.swift/GRDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LeanCloud/LeanCloud.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView/PryntTrimmerView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout/Stevia.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker/YPImagePicker.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/JCore/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/Headers\"",
+				);
 				INFOPLIST_FILE = LittlePink/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Pink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -614,6 +707,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliSDKDemo",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nofoot.LittlePink;
@@ -631,7 +728,7 @@
 		};
 		DAFC3B2B2C3BD328003DAB52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA57B565965C58BC34E89619 /* Pods-LittlePink.release.xcconfig */;
+			baseConfigurationReference = 1761E734C17FA3974E45F943 /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,6 +741,25 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DateToolsSwift/DateToolsSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GRDB.swift/GRDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LeanCloud/LeanCloud.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView/PryntTrimmerView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout/Stevia.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker/YPImagePicker.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/JCore/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/JVerification/Headers\"",
+				);
 				INFOPLIST_FILE = LittlePink/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Pink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -655,6 +771,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliSDKDemo",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nofoot.LittlePink;
